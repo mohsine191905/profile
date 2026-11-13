@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio professionnel de Mohsine El Boussakni — Data Analyst, Business Intelligence et Machine Learning Enthusiast." />
+  <meta name="author" content="Mohsine El Boussakni" />
+  <meta name="theme-color" content="#06241A" />
+  <meta property="og:title" content="Mohsine El Boussakni — Data Analyst & BI" />
+  <meta property="og:description" content="Portfolio professionnel — Data Analysis, Business Intelligence, Machine Learning." />
+  <meta property="og:type" content="website" />
+  <title>Mohsine El Boussakni — Data Analyst | Business Intelligence</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#home" class="nav__logo" aria-label="Accueil - Mohsine">MOHSINE<span>.</span></a>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#experience" class="nav__link">Experience</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <p class="hero__eyebrow">HELLO, I'M</p>
+          <h1 class="hero__name">MOHSINE<br />EL BOUSSAKNI</h1>
+          <p class="hero__title">Data Analyst <span>|</span> Business Intelligence <span>|</span> Machine Learning Enthusiast</p>
+          <p class="hero__intro">
+            Technicien Supérieur en Informatique Décisionnelle et Statistique, passionné par
+            l'analyse de données, la Business Intelligence et l'automatisation des processus (ETL). Je transforme
+            les données complexes en informations stratégiques pour faciliter la prise de décision.
+          </p>
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Projects</a>
+            <a href="assets/documents/CV-Mohsine-El-Boussakni.pdf" download class="btn btn--ghost">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download CV
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal">
+          <div class="hero__frame">
+            <!-- Image de profil avec fallback si l'image n'est pas trouvée -->
+            <div class="profile-container" id="profileContainer">
+              <img src="assets/images/profile.jpg" alt="Photo de profil de Mohsine El Boussakni" class="hero__photo" id="profilePhoto" onerror="this.style.display='none'; document.getElementById('profileFallback').style.display='flex';" />
+              
+              <div class="profile-fallback" id="profileFallback" style="display: none;">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                <span>Photo de profil</span>
+                <a href="assets/documents/CV-Mohsine-El-Boussakni.pdf" target="_blank" rel="noopener" class="btn btn--small btn--primary" style="margin-top: 10px;">Voir mon CV</a>
+              </div>
+            </div>
+          </div>
+          <span class="hero__deco hero__deco--1" aria-hidden="true"></span>
+          <span class="hero__deco hero__deco--2" aria-hidden="true"></span>
+          <span class="hero__deco hero__deco--3" aria-hidden="true"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">ABOUT ME</p>
+          <h2 class="section__title">À propos</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="about__grid">
+          <div class="about__text reveal">
+            <p>
+              Je suis <strong>Mohsine El Boussakni</strong>, Technicien Supérieur titulaire d'un
+              Diplôme Universitaire de Technologie en Informatique Décisionnelle et Statistique,
+              obtenu à l'École Supérieure de Technologie de Fkih Ben Saleh.
+            </p>
+            <p>
+              Je m'intéresse particulièrement à l'analyse des données, à la Business Intelligence,
+              au Machine Learning et au développement informatique.
+            </p>
+            <p>
+              J'aime transformer les données en informations utiles pour faciliter la compréhension,
+              l'analyse et la prise de décision.
+            </p>
+          </div>
+
+          <aside class="about__info reveal">
+            <ul class="about__list">
+              <li>
+                <span class="about__label">Formation</span>
+                <span class="about__value">DUT Informatique Décisionnelle et Statistique</span>
+              </li>
+              <li>
+                <span class="about__label">Localisation</span>
+                <span class="about__value">Sidi Bennour, Maroc</span>
+              </li>
+              <li>
+                <span class="about__label">Email</span>
+                <a href="mailto:elboussaknemohsine@gmail.com" class="about__value about__value--link">elboussaknemohsine@gmail.com</a>
+              </li>
+              <li>
+                <span class="about__label">Téléphone</span>
+                <a href="tel:+212642465349" class="about__value about__value--link">06 42 46 53 49</a>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">WHAT I WORK WITH</p>
+          <h2 class="section__title">Technical Skills</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="skills__grid">
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming Languages</h3>
+            <ul class="skill-card__tags">
+              <li>C</li><li>C++</li><li>Python</li><li>R</li><li>SQL</li><li>PL/SQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.7 4 3 9 3s9-1.3 9-3V5"/><path d="M3 12c0 1.7 4 3 9 3s9-1.3 9-3"/></svg>
+            </div>
+            <h3>Databases</h3>
+            <ul class="skill-card__tags">
+              <li>MongoDB</li><li>Redis</li><li>Cassandra</li><li>Oracle</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </div>
+            <h3>Big Data</h3>
+            <ul class="skill-card__tags">
+              <li>HDFS</li><li>Hive</li><li>MapReduce</li><li>YARN</li><li>Spark</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg>
+            </div>
+            <h3>ETL &amp; Data Science</h3>
+            <ul class="skill-card__tags">
+              <li>KNIME</li><li>Talend</li><li>N8N</li><li>Pandas</li><li>NumPy</li><li>Scikit-learn</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><rect x="7" y="12" width="3" height="6"/><rect x="12" y="8" width="3" height="10"/><rect x="17" y="5" width="3" height="13"/></svg>
+            </div>
+            <h3>Data Analysis &amp; BI</h3>
+            <ul class="skill-card__tags">
+              <li>Excel</li><li>Power BI</li><li>Statistical Analysis</li><li>Data Visualization</li><li>Flask</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+       <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="experience section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">MY JOURNEY</p>
+          <h2 class="section__title">Experience</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="timeline">
+          <!-- Expérience 1 -->
+          <article class="timeline__item reveal">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <p class="timeline__type">Stage Technique de Fin d'Études</p>
+              <h3>OCP Groupe — Département OIJ/M</h3>
+              <p class="timeline__meta">Jorf Lasfar | Avril - Juin 2026</p>
+              <p class="timeline__desc">
+                <strong>Projet :</strong> Système Automatisé de Suivi et de Gestion des Ordres (SCB).<br>
+                <strong>Missions :</strong> Automatisation de la lecture d'e-mails (IMAP), extraction de données PDF avec Python (pdfplumber), comparaison de données avec Excel (Pandas), et création d'un dashboard interactif (HTML/CSS/JS, Plotly, Flask). Orchestration du flux avec <strong>N8N</strong>.
+              </p>
+              <!-- BOUTON PDF -->
+              <a href="assets/documents/rapport-stage-ocp.pdf" target="_blank" rel="noopener" class="btn-pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Voir le rapport PDF
+              </a>
+            </div>
+          </article>
+
+          <!-- Expérience 2 -->
+          <article class="timeline__item reveal">
+            <span class="timeline__dot" aria-hidden="true"></span>
+            <div class="timeline__content">
+              <p class="timeline__type">Stage Technique d'Initiation</p>
+              <h3>INOVAFRIQUE</h3>
+              <p class="timeline__meta">Casablanca</p>
+              <p class="timeline__desc">
+                <strong>Projet :</strong> Application Web de Gestion des Demandes de Congé.<br>
+                <strong>Missions :</strong> Développement d'un MVP avec <strong>Flask</strong> (Backend) et HTML/CSS (Frontend). Gestion des utilisateurs, validation des demandes par l'admin, et calcul automatique des soldes de congés. Stockage des données en JSON.
+              </p>
+              <!-- BOUTON PDF -->
+              <a href="assets/documents/rapport-stage-inovafrique.pdf" target="_blank" rel="noopener" class="btn-pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                Voir le rapport PDF
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">ACADEMIC WORK</p>
+          <h2 class="section__title">Projects</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="projects__grid">
+
+          <!-- Project 1 -->
+          <article class="project-card reveal">
+            <div class="project-card__pdf">
+              <object data="assets/projects/projet-1-ml.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" class="project-card__pdf-embed" aria-label="Aperçu PDF — Machine Learning marché de l'emploi IT">
+                <div class="pdf-fallback">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span>Aperçu PDF du projet</span>
+                </div>
+              </object>
+            </div>
+            <div class="project-card__body">
+              <h3>Machine Learning — Marché de l'emploi IT</h3>
+              <p>Analyse des offres d'emploi IT pour identifier les compétences demandées et étudier les tendances via des techniques de NLP et clustering.</p>
+              <ul class="project-card__tags">
+                <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>TF-IDF</li><li>K-Means</li><li>Power BI</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="assets/projects/projet-1-ml.pdf" target="_blank" rel="noopener" class="btn btn--small btn--primary">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card reveal">
+            <div class="project-card__pdf">
+              <object data="assets/projects/projet-2-stock.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" class="project-card__pdf-embed" aria-label="Aperçu PDF — Système de gestion de stock ETL">
+                <div class="pdf-fallback">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span>Aperçu PDF du projet</span>
+                </div>
+              </object>
+            </div>
+            <div class="project-card__body">
+              <h3>Système de gestion de stock (ETL)</h3>
+              <p>Création d'un flux ETL avec KNIME pour centraliser les données de stock, stockage dans un Data Warehouse PostgreSQL et visualisation sur Power BI.</p>
+              <ul class="project-card__tags">
+                <li>KNIME</li><li>PostgreSQL</li><li>Data Warehouse</li><li>Power BI</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="assets/projects/projet-2-stock.pdf" target="_blank" rel="noopener" class="btn btn--small btn--primary">View Project</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card reveal">
+            <div class="project-card__pdf">
+              <object data="assets/projects/projet-3-kmeans.pdf#toolbar=0&navpanes=0&view=FitH" type="application/pdf" class="project-card__pdf-embed" aria-label="Aperçu PDF — Clustering K-Means ventes">
+                <div class="pdf-fallback">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  <span>Aperçu PDF du projet</span>
+                </div>
+              </object>
+            </div>
+            <div class="project-card__body">
+              <h3>Clustering K-Means sur données de ventes</h3>
+              <p>Segmentation des clients selon leurs historiques d'achats pour identifier les clients fidèles et orienter les stratégies marketing.</p>
+              <ul class="project-card__tags">
+                <li>Python</li><li>Pandas</li><li>Scikit-learn</li><li>K-Means</li>
+              </ul>
+              <div class="project-card__actions">
+                <a href="assets/projects/projet-3-kmeans.pdf" target="_blank" rel="noopener" class="btn btn--small btn--primary">View Project</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="education section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">ACADEMIC BACKGROUND</p>
+          <h2 class="section__title">Education</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="education__grid">
+          <article class="edu-card reveal">
+            <span class="edu-card__year">2024 – 2026</span>
+            <h3>Diplôme Universitaire de Technologie (DUT)</h3>
+            <p class="edu-card__field">Informatique Décisionnelle et Statistique</p>
+            <p class="edu-card__school">École Supérieure de Technologie — Fkih Ben Saleh</p>
+          </article>
+
+          <article class="edu-card reveal">
+            <span class="edu-card__year">2023 – 2024</span>
+            <h3>Baccalauréat Sciences Physiques</h3>
+            <p class="edu-card__field">Mention Assez Bien</p>
+            <p class="edu-card__school">Lycée Qualifiant Doukkala — Sidi Bennour</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="section__eyebrow">GET IN TOUCH</p>
+          <h2 class="section__title">Contact</h2>
+          <span class="section__line" aria-hidden="true"></span>
+        </header>
+
+        <div class="contact__grid">
+          <a href="tel:+212642465349" class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7 12.8 12.8 0 0 0 .7 2.8 2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5 12.8 12.8 0 0 0 2.8.7 2 2 0 0 1 1.7 2z"/></svg>
+            </div>
+            <h3>Téléphone</h3>
+            <p>06 42 46 53 49</p>
+          </a>
+
+          <a href="mailto:elboussaknemohsine@gmail.com" class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            </div>
+            <h3>Email</h3>
+            <p>elboussaknemohsine@gmail.com</p>
+          </a>
+
+          <!-- Lien LinkedIn mis à jour -->
+          <a href="https://www.linkedin.com/in/mohsine-el-boussakni" target="_blank" rel="noopener noreferrer" class="contact-card reveal">
+            <div class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h3>LinkedIn</h3>
+            <p>Mohsine El Boussakni</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <p class="footer__logo">MOHSINE EL BOUSSAKNI<span>.</span></p>
+        <p class="footer__role">Data Analyst | Business Intelligence</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Navigation pied de page">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="footer__social">
+        <a href="https://www.linkedin.com/in/mohsine-el-boussakni" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom container">
+      <p>&copy; <span id="year"></span> Mohsine El Boussakni. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut" title="Retour en haut">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
